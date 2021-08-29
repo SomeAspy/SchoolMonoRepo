@@ -1,0 +1,7 @@
+.guess { /*define the green circles*/
+    height: 25px;
+    width: 25px;
+    background-color: lime;
+    border-radius: 50%;
+    display: inline-block;
+}

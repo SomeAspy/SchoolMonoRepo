@@ -1,0 +1,24 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--import jquery-->
+    <link rel="stylesheet" href="stylesheet.css"> <!--import the CSS-->
+    
+    <head>
+        <div>
+            <h1>Guesses</h1> <!--circles-->
+            <span id="1" class="guess"></span>
+            <span id="2" class="guess"></span>
+            <span id="3" class="guess"></span>
+            <span id="4" class="guess"></span>
+            <span id="5" class="guess"></span>
+            <span id="6" class="guess"></span>
+
+        </div>
+        <div>
+            <h1 id="word"></h1> <!--display area-->
+        </div>
+    </head>
+</html>
+
+<script src="words.js"></script>
+<script src="game.js"></script>
+<button id="button" onclick="window.guess = takeGuess(); process();">Take a guess!</button> <!--make a button that asks for guess, then process it-->
