@@ -1,7 +1,0 @@
-.vscode/*
-!.vscode/tasks.json
-!.vscode/launch.json
-*.code-workspace
-.history
-.ionide
-tempCodeRunnerFile.py
