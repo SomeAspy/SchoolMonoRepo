@@ -1,4 +1,3 @@
-import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -35,12 +34,12 @@ public class App {
             }
         }
     }
-    
-    
+
+
     static void printBoard(){
         System.out.println("  A   B   C   D   E   F   G   H   I\n  "+(Arrays.deepToString(board)).replace(", ", "   ").replace("[", "").replace("] ", "\n\n").replace("]]", "").replace("0", "X"));
     }
-    
+
     static void editMenu(){
         System.out.println("Entering editing mode...");
         while(true){
@@ -48,7 +47,7 @@ public class App {
             switch(input.nextLine().toLowerCase()){
                 case"r":case"return":return;
                 case"c":case"check":
-                    if(checkBoard()){
+                    if(boardOK()){
                         System.out.println("Board is solvable!");
                     }else{
                         System.out.println("Board is not solvable!");
@@ -58,11 +57,15 @@ public class App {
                 default:System.out.println("Oops! That's not an option!");
             }
         }
-        
+
     }
 
     static void solveBoard(){
+        if(boardOK()){
 
+        }else{
+            System.out.println("This board isn't solvable!");
+        }
     }
 
     static void edit(){
@@ -121,7 +124,7 @@ public class App {
         }
     }
 
-    static boolean checkBoard(){
+    static boolean boardOK(){
         boolean OK=true;
         for(int[]row:board){//loop through rows
             for(int num:row){
