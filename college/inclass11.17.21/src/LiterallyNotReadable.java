@@ -1,0 +1,1 @@
+import java.io.File;import java.io.PrintWriter;import java.util.Scanner;public class LiterallyNotReadable{public static void main(String[]args)throws Exception{var f=new PrintWriter(new File("a.txt"));for(int i=1;i<=100;i++){f.println(i);}f.close();var r=new Scanner(new File("a.txt"));while(r.hasNextLine()){System.out.println(r.nextLine());}r.close();}}
