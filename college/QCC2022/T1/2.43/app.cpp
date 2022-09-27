@@ -8,10 +8,19 @@ using namespace std;
 
 int main()
 {
-    double caffeineMg;
+    long double a, b, c, d, product, avg;
 
-    cin >> caffeineMg;
+    cin >> a >> b >> c >> d;
 
-    cout << "After 6 hours: " << fixed << setprecision(2) << caffeineMg * 0.5 << " mg\nAfter 12 hours: " << caffeineMg * 0.25 << " mg\nAfter 24 hours: " << caffeineMg * 0.0625 << " mg\n";
+    // this is fucking stupid
+    int aOF = a, bOF = b, cOF = c, dOF = d, productOF;
+
+    productOF = aOF * bOF * cOF * dOF;
+
+    product = a * b * c * d;
+    avg = (a + b + c + d) / 4;
+
+    cout << fixed << setprecision(0) << productOF << " " << static_cast<int>(avg) << endl;
+    cout << fixed << setprecision(3) << product << " " << avg << endl;
     return 0;
 }
