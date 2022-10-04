@@ -1,5 +1,0 @@
-A
-B B
-CC C
-D D DD
-EEE EE
