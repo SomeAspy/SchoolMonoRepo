@@ -17,8 +17,8 @@ int main()
     int dot = email.find(".");
 
     userName = email.substr(0, atSymbol);
-    domainName = email.substr(atSymbol + 1, dot - atSymbol - 1);
-    TLD = email.substr(dot + 1, emailLength);
+    domainName = email.substr(atSymbol + 1, atSymbol - dot - 1);
+    TLD = email.substr(dot + 1);
     cout << "Username: " << userName << endl;
     cout << "Domain: " << domainName << endl;
     cout << "TLD: " << TLD << endl;
