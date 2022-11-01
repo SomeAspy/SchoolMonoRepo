@@ -76,7 +76,7 @@ int main()
 
             cin >> search2;
             cout << search2 << endl;
-            cout << "Enter a word to replace:\n";
+            cout << "Enter word to replace:\n";
             cin >> replace;
             cout << replace << endl;
 
@@ -90,7 +90,7 @@ int main()
                     paragraph.replace(found, search2.length(), replace);
                 }
             }
-            cout << "New String: " << paragraph << endl;
+            cout << "New string: " << paragraph << endl;
             cout << "Occurrences of Word = " << results2 << endl;
         }
     }
