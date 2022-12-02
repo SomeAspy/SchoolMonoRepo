@@ -19,6 +19,22 @@ int GetNumOfWords(const string str) // stolen from 5.44
     return count + 1;
 }
 
+int search(string str, string searchStr)
+{
+    int count = 0;
+    for (unsigned int i = 0; i < str.length(); i++)
+    {
+        if (str[i] == searchStr[0])
+        {
+            if (str.substr(i, searchStr.length()) == searchStr)
+            {
+                count++;
+            }
+        }
+    }
+    return count;
+}
+
 void replaceString(string &str, const string search, const string replace)
 {
     for (unsigned int i = 0; i < str.length(); i++)
@@ -46,7 +62,10 @@ void prompt()
         {
             // write a function for search
             // return count of words
-            count = GetNumOfWords(s);
+            cout << "Enter a word to search for:" << endl;
+            string searchS;
+            getline(cin, searchS);
+            count = search(s, searchS);
         }
         else if (c == 'r')
         {
@@ -75,6 +94,8 @@ void prompt()
 
 int main()
 {
-    prompt();
+    string s = "To be, or not to be, that is the question.";
+    string w = "be";
+    int count = search(s, w);
     return 0;
 }
