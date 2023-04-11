@@ -1,6 +1,9 @@
-/.vscode/
 *.ilk
 *.pdb
 /.vs/
 /bin/
 *.class
+*/LICENSE
+**/*/.vscode
+*.exe
+**/*/.gitignore

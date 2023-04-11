@@ -1,0 +1,1 @@
+#define TEMPLATE_CLASSES_H

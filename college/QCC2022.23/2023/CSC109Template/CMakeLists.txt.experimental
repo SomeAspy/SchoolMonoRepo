@@ -1,0 +1,36 @@
+# STUFF YOU SHOULD FILL OUT:
+
+# This is the directory of the CxxTest repo (If you don't have it, get it here: https://github.com/CxxTest/cxxtest)
+set(CXXTEST_INCLUDE_DIR "C:/cxxtest*")
+
+# Replace TEMPLATE with the project name
+set(PROJECT_NAME TEMPLATE)
+
+# Set source files here
+set(SOURCES main.cpp Tests.h Classes.h Functions.cpp)
+
+# Set files needed for testing here
+set(TESTS Tests.cpp Functions.cpp)
+
+
+
+
+
+# You shouldn't need to touch this, if theres an issue open a PR or issue at https://github.com/SomeAspy/CSC109Template
+cmake_minimum_required(VERSION 3.23)
+project(${PROJECT_NAME})
+set(CXXTEST_PYTHON_TESTGEN_EXECUTABLE ${CXXTEST_INCLUDE_DIR}/bin/cxxtestgen)
+find_package(CxxTest)
+if(CXXTEST_FOUND)
+    message(STATUS "Hello CxxTest!")
+    include_directories(${CXXTEST_INCLUDE_DIR})
+    enable_testing()
+    list(APPEND runner.cpp)
+    foreach(ITEM IN LISTS TESTS)
+        CXXTEST_ADD_TEST(${ITEM} ${ITEM})
+    endforeach(ITEM IN TESTS)
+else()
+    message(STATUS "Could not find CxxTest! You sure its there?")
+    message(STATUS "Will run without testing capabilites!")
+endif()
+add_executable(${PROJECT_NAME} ${SOURCES})
