@@ -1,8 +1,6 @@
 /.vscode/
-*.exe
 *.ilk
 *.pdb
 /.vs/
 /bin/
 *.class
-*/build/*
