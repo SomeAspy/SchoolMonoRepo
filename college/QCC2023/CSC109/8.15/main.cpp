@@ -57,7 +57,6 @@ PlaylistNode *ExecuteMenu(char option, string playlistTitle, PlaylistNode *headN
         cout << playlistTitle << " - OUTPUT FULL PLAYLIST\n";
         PlaylistNode *temp = headNode;
         if (temp == NULL)
-        // This is here to handle impossibly malformed inputs (ie not made with new PlaylistNode (FUCK YOU ZYBOOKS))
         {
             cout << "Playlist is empty\n";
         }

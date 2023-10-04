@@ -42,11 +42,9 @@ PlaylistNode *PlaylistNode::GetNext() const
 
 void PlaylistNode::InsertAfter(PlaylistNode *nodePtr)
 {
-    if (nextNodePtr != nullptr)
-    {
-        nodePtr->InsertAfter(nextNodePtr);
-    }
+    PlaylistNode *temp = nextNodePtr;
     nextNodePtr = nodePtr;
+    nodePtr->nextNodePtr = temp;
 }
 
 void PlaylistNode::SetNext(PlaylistNode *nodePtr)
