@@ -20,3 +20,5 @@
 **/Testing
 **/submit
 *.zip
+*.out
+*.h.gch
