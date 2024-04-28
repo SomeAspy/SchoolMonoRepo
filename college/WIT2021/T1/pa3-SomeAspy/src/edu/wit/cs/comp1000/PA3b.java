@@ -1,7 +1,7 @@
 package edu.wit.cs.comp1000;
 import java.util.Scanner;
 /**
- * @author Aiden Baker
+ * @author Aiden  
  */
 public class PA3b {
 	public static void main(String[] args) {//NOSONAR (S3776)

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Does the opposite of PA1a
- * @author Aiden Baker
+ * @author Aiden  
  */
 public class PA1b {
 

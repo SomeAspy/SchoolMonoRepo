@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
 
 
 /**
- * @author Aiden Baker
+ * @author Aiden  
  * 
  */
 public class PA2b {

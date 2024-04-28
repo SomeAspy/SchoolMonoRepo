@@ -2,7 +2,7 @@ package edu.wit.cs.comp1000;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 /**
- * @author Aiden Baker
+ * @author Aiden  
  * First time using a linter for this, time to die!
  * NOSONAR comments disable linting for the line
  */

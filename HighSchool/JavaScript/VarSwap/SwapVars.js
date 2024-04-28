@@ -24,5 +24,5 @@ values are swapped by first setting the cache variable to player one's value. pl
 is set to the value in cache, which is player one's original value. 
 after that is finished the results are logged to console. 
 as for using different inputs the vars can be set to anything you like.
-this was written in Javascript by Aiden Baker. 
+this was written in Javascript by Aiden  . 
 */

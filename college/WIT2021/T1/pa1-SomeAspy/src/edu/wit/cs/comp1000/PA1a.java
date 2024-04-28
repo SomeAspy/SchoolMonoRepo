@@ -2,7 +2,7 @@ package edu.wit.cs.comp1000;
 import java.util.Scanner;
 /**
  * ideally this does a thing like adding inches or something
- * @author Aiden Baker
+ * @author Aiden  
  */
 public class PA1a {
 

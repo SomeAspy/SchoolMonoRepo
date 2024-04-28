@@ -1,4 +1,4 @@
-// Copyright (C) 2022 Aiden Baker
+// Copyright (C) 2022 Aiden
 //
 // This file is part of SchoolMonoRepo.
 //

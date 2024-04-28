@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 /**
- * @author Aiden Baker
+ * @author Aiden  
  * 
  */
 public class PA2a {
