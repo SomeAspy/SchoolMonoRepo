@@ -22,3 +22,4 @@
 *.zip
 *.out
 *.h.gch
+**/Numbers.txt
