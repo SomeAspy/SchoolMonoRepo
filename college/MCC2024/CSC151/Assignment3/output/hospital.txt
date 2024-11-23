@@ -1,0 +1,9 @@
+
+**************************
+Hospital Billing Statement
+**************************
+Room charges    $     500
+Lab & Services  $  120.00
+Medication      $  400.00
+Total charges   $ 1020.00
+**************************
